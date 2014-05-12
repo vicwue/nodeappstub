@@ -52,6 +52,7 @@ module.exports = function (flights, db) {
 	}));
 
 	app.get('/user', routes.user);
+	app.get('/', routes.login);
 
 	return app;
 }
